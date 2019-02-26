@@ -28,8 +28,8 @@
         <entry file="file://$PROJECT_DIR$/tensorflowLearn/Fully-connected-neural-network/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <first_editor relative-caret-position="120">
+                <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
               </first_editor>
               <second_editor />
             </state>
@@ -58,7 +58,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="63" />
+    <option name="x" value="-51" />
+    <option name="y" value="-870" />
     <option name="width" value="1400" />
     <option name="height" value="789" />
   </component>
@@ -157,7 +158,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="63" width="1400" height="789" extended-state="0" />
+    <frame x="-51" y="-870" width="1400" height="789" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -207,8 +208,8 @@
     <entry file="file://$PROJECT_DIR$/tensorflowLearn/Fully-connected-neural-network/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
           </first_editor>
           <second_editor />
         </state>
