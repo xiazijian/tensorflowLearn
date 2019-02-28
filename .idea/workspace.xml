@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd792f1c-4ff0-46c8-9a3f-2dca35a70720" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/tensorflowLearn/Fully-connected-neural-network/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflowLearn/Fully-connected-neural-network/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflowLearn/L2regularizationLossFuction/L2regularizationLossFuction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensorflowLearn/L2regularizationLossFuction/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflowLearn/Fully-connected-neural-network/Fully-connected-neural-network.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflowLearn/Fully-connected-neural-network/Fully-connected-neural-network.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflowLearn/Fully-connected-neural-network/Fully-connected-neural-network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            <state relative-caret-position="300">
+              <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -25,11 +28,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tensorflowLearn/Fully-connected-neural-network/README.md">
+        <entry file="file://$PROJECT_DIR$/tensorflowLearn/L2regularizationLossFuction/L2regularizationLossFuction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tensorflowLearn/L2regularizationLossFuction/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="120">
-                <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+              <first_editor>
+                <caret column="20" selection-start-column="20" selection-end-column="20" />
               </first_editor>
               <second_editor />
             </state>
@@ -52,14 +64,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/tensorflowLearn/Fully-connected-neural-network.py" />
-        <option value="$PROJECT_DIR$/tensorflowLearn/Fully-connected-neural-network/Fully-connected-neural-network.py" />
         <option value="$PROJECT_DIR$/tensorflowLearn/Fully-connected-neural-network/README.md" />
+        <option value="$PROJECT_DIR$/tensorflowLearn/Fully-connected-neural-network/Fully-connected-neural-network.py" />
+        <option value="$PROJECT_DIR$/tensorflowLearn/L2regularizationLossFuction/README.md" />
+        <option value="$PROJECT_DIR$/tensorflowLearn/L2regularizationLossFuction/L2regularizationLossFuction.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-51" />
-    <option name="y" value="-870" />
+    <option name="x" value="-79" />
+    <option name="y" value="-895" />
     <option name="width" value="1400" />
     <option name="height" value="789" />
   </component>
@@ -89,6 +103,12 @@
               <item name="tensorflowLearn" type="462c0819:PsiDirectoryNode" />
               <item name="Fully-connected-neural-network" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tensorflowLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tensorflowLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="tensorflowLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="L2regularizationLossFuction" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -116,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.L2regularizationLossFuction">
     <configuration name="Fully-connected-neural-network" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tensorflowLearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,8 +158,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="L2regularizationLossFuction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tensorflowLearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflowLearn/L2regularizationLossFuction" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflowLearn/L2regularizationLossFuction/L2regularizationLossFuction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.L2regularizationLossFuction" />
         <item itemvalue="Python.Fully-connected-neural-network" />
       </list>
     </recent_temporary>
@@ -158,19 +200,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-51" y="-870" width="1400" height="789" extended-state="0" />
+    <frame x="-79" y="-895" width="1400" height="789" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15445976" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.40315637" />
+      <window_info anchor="bottom" id="Python Console" weight="0.32998565" />
+      <window_info anchor="bottom" id="Terminal" weight="0.10903874" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25251076" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31420374" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -181,13 +223,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/training/optimizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="351" column="6" selection-start-line="351" selection-start-column="6" selection-end-line="351" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/h5py/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -195,10 +230,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/training/optimizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-807">
+          <caret line="395" column="43" selection-start-line="395" selection-start-column="26" selection-end-line="395" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="934" column="8" selection-start-line="934" selection-start-column="8" selection-end-line="934" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tensorflowLearn/Fully-connected-neural-network/Fully-connected-neural-network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="300">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -212,6 +261,23 @@
             <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflowLearn/L2regularizationLossFuction/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="20" selection-start-column="20" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflowLearn/L2regularizationLossFuction/L2regularizationLossFuction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>

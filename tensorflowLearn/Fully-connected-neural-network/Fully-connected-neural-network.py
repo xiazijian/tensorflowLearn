@@ -33,8 +33,8 @@ Y = [[int(x1 + x2 < 1)] for (x1, x2) in X]
 # print(Y)
 
 # 创建一个会话来运行tensorflow程序
-init_op = tf.global_variables_initializer()
 with tf.Session() as sess:
+    init_op = tf.global_variables_initializer()
     # 初始化变量
     sess.run(init_op)
     # 在训练之前神经网络参数的值
