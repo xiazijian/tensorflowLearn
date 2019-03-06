@@ -56,11 +56,12 @@ def train(mnist):
     # 使用tensorflow训练神经网络的时候一般会将代表训练轮数的变量指定为不可训练的参数
     global_step = tf.Variable(0,trainable=False)
 
-    # 给定滑动平均衰减率和训练轮数的变量，初始化滑动平均类。给定训练轮数的变量可以加快训练早期变量的更新速度
+    # 给定滑动平均衰减率和训练轮数的变量，定义并初始化滑动平均类。给定训练轮数的变量可以加快训练早期变量的更新速度
     variable_averages = tf.train.ExponentialMovingAverage(MOVING_AVERAGE_DECAY,global_step)
 
     # 在所有代表神经网络参数的变量上使用滑动平均。其他辅助变量 如：global_step 就不需要了。
     # tf.trainable_variables 返回的就是图上集合 GraphKeys.TRAINABLE_VARIABLES 中的元素，这个集合的元素就是所有没有指定 trainable=False的参数
+    # 通过对象调用apply方法可以通过滑动平均模型来更新参数
     variables_averages_op = variable_averages.apply(tf.trainable_variables())
 
     # 计算使用了滑动平均之后的前向传播结果。
@@ -70,6 +71,7 @@ def train(mnist):
     # 计算交叉熵作为刻画预测值和真实值之间差距的损失函数。使用tensorflow提供的sparse_softmax_cross_entropy_with_logits来计算交叉熵
     # 当分类问题只有一个正确答案的时候，可以使用这个函数来加快交叉熵的计算。
     # 函数第一个参数是神经网络不包括softmax层的前向传播结果，第二个参数是训练数据的正确答案
+    # 注意这里用的是y来计算交叉熵而不是 average_y
     cross_entropy = tf.nn.sparse_softmax_cross_entropy_with_logits(labels=tf.argmax(y_,1),logits=y)
 
     # 计算在当前batch中所有样例的交叉熵平均值
@@ -91,7 +93,8 @@ def train(mnist):
 
     # 使用tf.train.GradientDescentOptimizer优化算法来优化损失函数。注意这里损失函数包含来交叉熵损失和L2正则化损失
     train_step = tf.train.GradientDescentOptimizer(learning_rate).minimize(loss,global_step=global_step)
-    # tf.control_dependencies和tf.group 两种机制。下面两行程序和 train_op=tf.group(train_step,variable_averages_op)等价
+    # 在训练神经网络模型时，每过一遍既要通过反向传播来更新神经网络中的参数，又要更新每个参数的滑动平均值，为了一次完成多个操作，
+    # tensorlfow提供tf.control_dependencies和tf.group 两种机制。下面两行程序和 train_op=tf.group(train_step,variable_averages_op)等价
     with tf.control_dependencies([train_step,variables_averages_op]):
         train_op = tf.no_op(name='train')
 
@@ -132,8 +135,7 @@ def train(mnist):
 def main(argv=None):
     # 声明处理MNIST数据集的类，这个类在初始化时会自动下载数据
     mnist = input_data.read_data_sets("/tmp/data",one_hot=True)
-    print(mnist.validation.labels)
-    #train(mnist)
+    train(mnist)
 
 
 # Tensorflow 提供的一个主程序入口，tf.app.run 会调用上面定义的main函数
