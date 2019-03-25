@@ -46,4 +46,3 @@ def evaluate(mnist):
 
 
 
-
